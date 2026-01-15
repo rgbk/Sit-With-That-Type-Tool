@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sit With That Type Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+      /* Font Definitions - Local Files */
+      /* Please ensure a 'fonts' folder exists with these files */
+
+      /* ABC Monument Grotesk - Medium (500) */
+      @font-face {
+        font-family: 'ABC Monument Grotesk';
+        src: url('fonts/ABCMonumentGrotesk-Medium-Trial.woff2') format('woff2');
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      /* ABC Monument Grotesk - Medium Italic / Italic (Mapped to 500 Italic) */
+      /* Assuming the file is named MediumItalic based on context, or just Italic if that's what was provided */
+      @font-face {
+        font-family: 'ABC Monument Grotesk';
+        src: url('fonts/ABCMonumentGrotesk-Italic-Trial.woff2') format('woff2'); 
+        font-weight: 500;
+        font-style: italic;
+      }
+
+      /* ABC Marist - Regular (400) */
+      @font-face {
+        font-family: 'ABC Marist';
+        src: url('fonts/ABCMarist-Regular-Trial.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      /* ABC Marist - Regular Italic (400) */
+      @font-face {
+        font-family: 'ABC Marist';
+        src: url('fonts/ABCMarist-RegularItalic-Trial.woff2') format('woff2');
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      /* ABC Marist - Book (Mapped as a separate family or specific weight) */
+      /* We will define it as a separate family string to make switching easy in the app logic */
+      @font-face {
+        font-family: 'ABC Marist Book';
+        src: url('fonts/ABCMarist-Book-Trial.woff2') format('woff2');
+        font-weight: 400; /* Book often acts as Regular in its own context */
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'ABC Marist Book';
+        src: url('fonts/ABCMarist-BookItalic-Trial.woff2') format('woff2');
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      body {
+        background-color: #1a1a1a;
+        color: white;
+        overflow: hidden; /* Prevent native scrolling, we handle it */
+        /* Fallback font */
+        font-family: sans-serif;
+      }
+      
+      /* Custom Scrollbar for panels */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #2d2d2d; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #555; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #777; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "zustand": "https://esm.sh/zustand@^5.0.10"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
