@@ -1,0 +1,12 @@
+PLACE YOUR .WOFF2 FILES IN THIS FOLDER.
+
+For the site to load the fonts correctly, you must upload your files to this folder with these EXACT names:
+
+1. ABCMonumentGrotesk-Medium-Trial.woff2
+2. ABCMonumentGrotesk-Italic-Trial.woff2
+3. ABCMarist-Regular-Trial.woff2
+4. ABCMarist-RegularItalic-Trial.woff2
+5. ABCMarist-Book-Trial.woff2
+6. ABCMarist-BookItalic-Trial.woff2
+
+Once uploaded to GitHub, the site will reference them correctly.
